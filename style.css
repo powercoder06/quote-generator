@@ -1,19 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Edu+VIC+WA+NT+Beginner:wght@700&display=swap');
 
-.loader {
-    border: 16px solid #f3f3f3; 
-    border-top: 16px solid #333; 
-    border-radius: 50%;
-    width: 120px;
-    height: 120px;
-    animation: spin 2s linear infinite;
-    box-shadow: 0.5rem 0.5rem 20px 5px rgba(10, 3, 137, 0.663);
-  }
-  
-  @keyframes spin {
-    0% { transform: rotate(0deg); }
-    100% { transform: rotate(360deg); }
-  }
 html {
     box-sizing: border-box;
 }
