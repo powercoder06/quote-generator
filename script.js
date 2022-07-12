@@ -5,11 +5,13 @@ const twitterBtn = document.getElementById('twitter');
 const newQuoteBtn = document.getElementById('new-quote');
 const loader = document.getElementById('loader');
 
+//show loading
 function loading() {
     loader.hidden = false;
     quoteContainer.hidden = true;
 }
 
+//hide loading
 function complete() {
     loader.hidden = true;
     quoteContainer.hidden = false;
@@ -29,7 +31,7 @@ function newQuotes() {
     else {
         authorText.textContent = '~'+quote.author;
     }
-    quoteText.textContent = quote.text;
+    
 
     //Check Quote length to determine styling
     if(quote.text.length>120){
@@ -38,7 +40,9 @@ function newQuotes() {
     else{
         quoteText.classList.remove('long-quote');
     }
+    quoteText.textContent = quote.text;
     complete();
+    
 }
 // Get quotes from API
 
